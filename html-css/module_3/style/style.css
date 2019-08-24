@@ -1,11 +1,27 @@
-
 body{
-    max-width: 1024px;
-    text-align: center;
-    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262;
+    line-height: 24px;
 }
 
-.navigation_ul li{
-    display: inline-block;
-    width: 24.5%;
+.navigation_ul{
+    list-style: none;
+}
+
+.navigation_ul a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #626262;
+    font-weight: 700;
+}
+
+.navigation_ul a:hover{
+    color: #03a9f4;
+}
+
+article .tag{
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #b4ad9e;
 }
