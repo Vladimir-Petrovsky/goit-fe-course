@@ -1,57 +1,88 @@
+html{
+	box-sizing:border-box;
+}
+
+*,
+*::before, 
+*::after{
+	box-sizing: inherit;
+}
+
 body{
-    max-width: 1200px;
-    margin: auto;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     color: #626262;
     line-height: 24px;
 }
 
-header{
-    height: 166px;
-    padding: 71px 316px;
-    box-sizing: border-box;
+.container{
+    width: 901px;
+    margin: 0 auto;
+}
+
+.navigation{
+    padding: 77px 0;
 }
 
 .navigation_ul{
+    vertical-align: middle;
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 0;
 }
 
 .navigation_ul li{
     display: inline-block;
-    width: 135px;
-    text-align: center;
+    font-size: 14px;
+}
+
+.navigation_ul li:not(:last-child){
+    margin-right: 100px;
 }
 
 .navigation_ul a{
+    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     color: #626262;
 }
 
-.navigation_ul a:hover{
+.navigation_ul a:hover,
+.navigation_ul a:focus{
     color: #03a9f4;
 }
 
-main{
-    margin: 0px 150px;
+main section{
+    font-size: 0;  
+    padding-bottom: 100px;  
 }
 
 main article{
     display: inline-block;
-    width: 418px;
+    width: 420px;
+    margin: 0;
+    padding: 0;
     margin-bottom: 130px;
 }
 
+article h2{
+    font-size: 30px;
+    margin-bottom: 36px;
+}
+
+article p{
+    font-size: 14px;
+}
+
 article img{
-    width: 418px;
-    height: 281px;
+    width: 420px;
+    height: 280px;
 }
 
 .left_item{
-    margin-right: 59px;
+    margin-right: 60px;
 }
 
 article .tag{
@@ -63,7 +94,7 @@ article .tag{
 section button{
     display: block;
     width: 163px;
-    margin: 0 auto 100px;
+    margin: 0 auto;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     color: #626262;
