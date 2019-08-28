@@ -69,16 +69,19 @@ main article{
 
 article h2{
     font-size: 30px;
+    margin: 0;
     margin-bottom: 36px;
 }
 
 article p{
+    margin: 0;
     font-size: 14px;
 }
 
 article img{
     width: 420px;
     height: 280px;
+    margin-bottom: 28px;
 }
 
 .left_item{
@@ -86,6 +89,7 @@ article img{
 }
 
 article .tag{
+    margin-bottom: 34px;
     line-height: 17px;
     text-transform: uppercase;
     color: #b4ad9e;
