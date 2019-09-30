@@ -44,6 +44,11 @@ body{
     text-align: center;
 }
 
+.logo a{
+    text-decoration: none;
+    color: #555252;
+}
+
 .logo p{
     margin: 0;
     padding: 0;
@@ -56,8 +61,11 @@ body{
     font-weight: bold; 
 }
 
-.navigation {
+.page_nav{
     float: right;
+}
+
+.navigation {
     width: 464px;
     margin: 0;
     margin-top: 8px;
@@ -100,7 +108,7 @@ body{
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 92px;
+    /*margin-bottom: 92px;*/
 }
 
 .section_title::after{
@@ -121,7 +129,6 @@ body{
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 100px;
 }
 
 .products_list li{
@@ -140,6 +147,10 @@ body{
 
 .products_list li:nth-child(4n + 4) {
     margin-right: 0; 
+}
+
+.products_list li:nth-last-child(-n + 4){
+    margin-bottom: 100px;
 }
 
 .product_img{
@@ -166,11 +177,13 @@ body{
     text-transform: uppercase;
     line-height: 32px;
     float: left;
+    margin: 0;
     padding-top: 4px;
 }
 
 .product_price{
     text-align: center;
+    margin: 0;
     padding-top: 4px;
     width: 54px;
     height: 100%;
@@ -190,7 +203,6 @@ body{
 
 .blog{
     width: 100%;
-    height: auto;
 }
 
 .blog_list{
@@ -199,14 +211,9 @@ body{
     padding: 0;
 }
 
-.blog_list a{
-    text-decoration: none;
-}
-
 .blog_list li{
     float: left;
     width: 350px;
-    height: 496px;
     margin-right: 30px; 
 }
 
@@ -218,13 +225,14 @@ body{
     line-height: 26px;
     font-size: 18px;
     color: #555252;
-    padding-bottom: 26px;
+    margin: 0;
+    margin-bottom: 26px;
 }
 
 .blog_title::after{
     content: "";
     display: block;
-    margin: 0; 
+    margin-top: 10px; 
     width: 130px;
     height: 3px;
     background-color: #1abc9c;
@@ -236,18 +244,24 @@ body{
     font-family: "Open Sans" sans-serif;
     color: #555252;
     margin-bottom: 13px;
-
 }
 
-.button{
+.blog_link{
+    display: inline-block;
     width: 160px;
     height: 50px;
-    background-color: #1abc9c;
+    background-color: #323232;
+    text-align: center; 
     line-height: 26px;
     font-size: 16px;
     font-family: "Open Sans";
     font-weight: lighter;
     color: #ffffff;
-    border: none;
     border-radius: 5px;
+    padding-top: 13px; 
+}
+
+.blog_link:hover,
+.blog_link:focus{
+    background-color: #1abc9c;
 }
