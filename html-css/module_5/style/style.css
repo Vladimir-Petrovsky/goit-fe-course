@@ -39,25 +39,22 @@ body{
 .logo{
     line-height: 32px;
     font-size: 30px;
-    width: 110px;
     margin: 0 ;
     float: left;  
     text-align: center;
 }
 
 .logo a{
+    display: block;
     text-decoration: none;
     color: #555252;
-}
-
-.logo p{
     margin: 0;
     padding: 0;
     font-weight: lighter;
     text-transform: uppercase;
 }
 
-.logo p::first-letter{
+.logo a::first-letter{
     color: #1abc9c;
     font-weight: bold; 
 }
@@ -245,7 +242,6 @@ body{
     visibility: visible;
 }
 
-
 .modal-backdrop{
     position: absolute;
     top: 0;
@@ -253,8 +249,7 @@ body{
     margin: 10px;
     width: 235px;
     height: 262px;
-    background-color: #515151;
-    opacity: 0.8;
+    background-color:rgba(115, 115, 115, 0.8);
     visibility: hidden; 
 }
 
