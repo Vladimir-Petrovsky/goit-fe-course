@@ -83,16 +83,19 @@ body{
 /*MAIN*/
 /*Section-title*/
  .pre_title{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'Kaushan Script', cursive;
+    font-weight: lighter;
     color: #333333;
     line-height: 38px;
     font-size: 24px;
     text-align: center;
+    text-transform: none;
 }
 
 .section_title{
+    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #333333;
@@ -134,6 +137,7 @@ body{
 }
 
 .service_list_item h3{
+    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     font-size: 14px;
@@ -189,6 +193,8 @@ body{
     display: flex;
     justify-content: space-between;
     margin-bottom: 82px;
+    list-style: none;
+    padding: 0;
 }
 
 .team_list_item{
@@ -218,7 +224,6 @@ body{
     color: #333333;
     font-family: 'Montserrat Regular', sans-serif;
     margin-bottom: 8px;
-   
 }
 
 .team_list_dscr span {
@@ -227,25 +232,17 @@ body{
     font-style: Italic;
 }
 
-.team_list_item:hover .modal-backdrop,
-.team_list_item:focus .modal-backdrop{
-    visibility: visible;
-}
-
 .team_list_item:hover .team_img,
 .team_list_item:focus .team_img{
     position: relative;
     left: -10px;
     top: -10px;
     z-index: 10;
+    transition: all 200ms linear;
   }
 
 .team_list_item:hover .modal-background,
 .team_list_item:focus .modal-background{
-    visibility: visible;
-}
-
-.modal-background{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -253,21 +250,21 @@ body{
     width: 100%;
     height: 470px;
     background-color: #95e1d3;
-    visibility: hidden;
+    transition: all 200ms linear;
 }
 
-.modal-backdrop{
+.team_list_item:hover .modal-backdrop,
+.team_list_item:focus .modal-backdrop{
     position: absolute;
     top: -10px;
     left: -10px;
     margin: 0;
     width: 100%;
     height: 470px;
-    background-color: #515151;
     background: linear-gradient(rgba(234,139,137,0.8) 0%, rgba(242,226,145,0.8) 100%);
-    visibility: hidden;
     background-color: transparent; 
     z-index: 11;     
+    transition: all 200ms linear;
 }
 
 .team_link_block{
@@ -281,22 +278,23 @@ body{
     justify-content: space-between;
 }
 
-.team_link{
+.team_list_item:hover .team_link,
+.team_list_item:focus .team_link{
     width: 56px;
     height: 56px;
     background-color: #fce38a; 
     background-repeat: no-repeat;
     background-position: center;
     border-right: 1px solid #f9bd87;
+    transition: all 200ms linear;
 }
 .team_link_block:last-child(){
     border-right: none;
 }   
 
-.team_link:hover,
-.team_link:focus{
+.team_link_block .team_link:hover,
+.team_link_block .team_link:focus{
     background-color: #95e1d3;
-    transition: all 200ms linear;
 }
 
 .link_fb{
