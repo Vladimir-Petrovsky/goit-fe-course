@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat/montserrat-v14-cyrillic_latin-regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat/montserrat-v14-cyrillic_latin-700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/RobotoSlab/roboto-slab-v9-cyrillic_latin-regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Wisdom Script Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Wisdom Script Regular'), 
+         url('../fonts/wisdom/Wisdom\ Script\ AJ.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Droid Serif Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Droid Serif Italic'), 
+         url('../fonts/DroidSerif/DroidSerif-Italic.woff') format('woff');
+}
+
+:root {
+    --gold-color: #fed136;
+    --dark-color: #222222;
+    --gray-color: #777777;
+}
+
+html {
+	box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+.page_header{
+    width: 100%;
+}
+
+.page_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 50px;
+    padding-bottom: 130px;
+}
+
+.site_logo{
+    text-decoration: none;
+    color: var(--gold-color);
+    margin: 0;
+    padding: 0;
+    font-family: "Wisdom Script Regular";
+    line-height: 40px;
+    font-size: 26px;
+}
+
+.site_navigation {
+    display: flex;
+    width: 485px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site_navigation li a{ 
+    padding-top: 5px;
+    display: block;
+    color: var(--dark-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 40px;
+} 
+
+.site_navigation li a:hover,
+.site_navigation li a:focus{
+    color: var(--gold-color);
+    transition: all 200ms linear;
+}
+/*HEADER*/
+
+/*MAIN*/
+/*Section-title*/
+.section_title{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: var(--dark-color);
+    line-height: 75px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+} 
+
+.sub_title{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Droid Serif Italic';
+    font-weight: 700;
+    color: var(--gray-color);
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+/*Section-title*/
+
+/*Service*/
+.service_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 90px;
+}
+
+.service_list_item{
+    width: 290px;
+    text-align: center;
+}
+
+.service_list_item h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 75px;
+    margin: 0 auto;
+}
+
+.service_list_item p{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.service_list_item::before{
+    content: '';
+    display: inline-block;
+    height: 73px;
+    width: 73px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service_list .photography::before{
+    background-image: url(../img/Icon_1.png);
+}
+.service_list .web_design::before{
+    background-image: url(../img/Icon_2.png);
+}
+.service_list .creativity::before{
+    background-image: url(../img/Icon_3.png);
+}
+/*Service*/
+
+
+/*Contact*/
+.contact_block{
+    padding-top: 100px;
+    background-color: var(--dark-color);
+    background-image: url(../img/footer_img.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.contact_block h2{
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.contact_block p{
+    margin:  0 auto;
+    margin-bottom: 64px;
+}
+
+.contact_form{
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.input_block{
+    width: 455px;
+}
+
+.input_block input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    color: var(--dark-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.message_block{
+    width: 455px;
+}
+
+.message_block textarea{
+    width: 100%;
+    height: 210px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    color: var(--dark-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+::placeholder{
+    color: var(--gray-color);
+}
+
+.input_block input:required:focus:valid,
+.message_block textarea:required:focus:valid {
+    outline: 2px solid #03a032;
+    transition: all 200ms linear;
+}
+
+.input_block input:focus:invalid:required,
+.message_block textarea:focus:invalid:required {
+    outline: 2px solid #ff0400;
+    transition: all 200ms linear;
+}
+
+.submit{
+    margin: 0 auto;
+}
+
+.button{
+    width: 240px;
+    height: 65px;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: var(--gold-color);
+    text-transform: uppercase;  
+    border-radius: 5px;
+    border: none;
+}
+
+.button:hover,
+.button:focus{
+    background-color: #fff;
+    color: var(--gold-color);
+    transition: all 200ms linear;
+}
+/*Contact*/
