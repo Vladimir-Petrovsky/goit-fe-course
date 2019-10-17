@@ -1,0 +1,52 @@
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 100%;
+        max-width: 768px;
+        padding: 0 40px;
+    }
+
+    .header_block{
+        position: relative;
+        padding-top: 38px;
+        display: flex;
+        flex-flow: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 150px;
+    }
+
+    .login_block{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
+    .header_wrap_container{
+        padding-bottom: 235px;
+    }
+
+    .header_wrap_container h1{
+        font-size: 52px;
+    }
+
+    .header_wrap_container p{
+        font-size: 24px;
+    }
+
+    .section_title{
+        font-size: 24px;
+    }
+
+    .partner_list{
+        flex-flow: row;
+        flex-wrap: wrap;
+        max-width: 600px;
+    }
+ 
+}
+    
